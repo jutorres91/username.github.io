@@ -1,0 +1,277 @@
+﻿
+*{
+	margin: 0;
+	padding: 0;
+  font family: sans-serif;
+ 	
+}
+.overflowbackground{
+  width: 100%;
+  height: 100px;
+  background: #EBEBEB;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+  width: 400px;
+  cursor: pointer;
+  margin: 25px 0;
+}
+.menu-icon{
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav UL li a:hover{
+  color: #bb0000;
+}
+.homecontent{
+  display: flex;
+  justify-content: space-between;
+  align items: center;
+  margin: 100px 0;
+}
+.homecol-1{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+.homecol-1 h2{
+  font-size: 60px;
+  font-family: Helvetica, sans-serif;
+  font-weight: Bold;
+  color: #bb0000;
+}
+.homecol-1 h3{
+  font-size: 30px;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  margin: 20px 0 10px;
+}
+.homecol-1 p{
+  font-size: 17px;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  color: #666666;
+  margin: 8px 0px 60px 0px;
+}
+.homecol-1 button{
+  width: 150px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, #bb0000, #F0514E);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+  margin: 8px 0px 5px 0px;
+}
+
+.homecol-1 button img{
+  width: 30px;
+  display: none;
+}
+.homecol-1 button: hover img{
+  display: block;
+}
+.homecol-1 button: hover{
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homecol-1::after{
+  content:'';
+  width: 10px;
+  height: 160px;
+  background: linear-gradient(#bb0000, #F0514E);
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+
+@media only screen and (max-width:700px){
+  nav ul{
+    width: 100%;
+    background: linear-gradient(#bb0000, #F0514E);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  nav ul li a{
+    color: #fff;
+  }
+  .menu-icon{
+    display: block;
+  }
+  #menuList{
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .row{
+    flex-directon: column reverse;
+    margin: 100px 0;
+  }
+  .col-2{
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+  .col-1{
+    flex-basis: 100%;
+  }
+  .col-1 h2{
+    font-size: 30px;
+  }
+  .col-1 h3{
+    font-size: 15px;
+  }
+  .col-1 p{
+    font-size: 9px;
+  }
+}
+.logo{
+  width: 300px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+/* START OF DATA VIZ PAGE STYLE */
+
+
+.datavizcol-1 button{
+  width: 300px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, #bb0000, #F0514E);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+.datavizcol-1 button img{
+  width: 30px;
+  display: none;
+}
+.dataviz-1 button: hover img{
+  display: block;
+}
+.dataviz-1 button: hover{
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.datacontent{
+  display: flex;
+  justify-content: space-between;
+  align items: center;
+  margin: 100px 0;
+}
+.datavizcol-1{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+.datavizcol-1 h2{
+  font-size: 60px;
+  font-family: Helvetica, sans-serif;
+  font-weight: Bold;
+  color: #bb0000;
+}
+.datavizcol-1 h3{
+  font-size: 30px;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  margin: 20px 0 10px;
+}
+.datavizcol-1 p{
+  font-size: 17px;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  color: #666666;
+  margin: 8px 0px 25px 0px;
+}
+
+/*INTERACTIVE DEMOS PAGE*/
+.democontent{
+  display: flex;
+  justify-content: space-between;
+  align items: left;
+  margin: 100px 0;
+}
+.democol-1{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+.democol-1 h2{
+  font-size: 60px;
+  font-family: Helvetica, sans-serif;
+  font-weight: Bold;
+  color: #bb0000;
+}
+
+.democol-1 h3{
+  font-size: 30px;
+  margin-top: 90px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  color: #666666;
+}
+.democol-1 p{
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  color: #666666;
+}
+.democol-1 button{
+  width: 200px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  background: linear-gradient(to right, #bb0000, #F0514E);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+  margin-top: 10px;
+}
