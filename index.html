@@ -1,26 +1,84 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>GeoAR.js demo</title>
-    <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
-    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script>
-        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
-    </script>
-</head>
-
-<body style='margin: 0; overflow: hidden;'>
-    <a-scene
-        vr-mode-ui="enabled: false"
-        embedded
-        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        
-        <a-camera gps-camera rotation-reader></a-camera>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Stadium Project</title>
+    <link rel=stylesheet href="accadstyle.css">
+    
+  </head>
+  <body>
+    <div class="overflowbackground">
+    <div class="container">
+      <div class="navbar">
+        <a href="https://accad.osu.edu/">
+          <img src="https://cdn.glitch.me/b5e6c854-0cfc-4a37-b4c8-0a2701a681bd%2FAsset%204.png?v=1633621427259" class="logo">
+        </a>
+        <nav>
+          <ul id="menuList">
+            <li><a href="https://jutorres91.github.io/username.github.io/">Null</a></li>
+            <li><a href="https://jutorres91.github.io/username.github.io/">Null</a></li>
+            <li><a href="https://jutorres91.github.io/username.github.io/">Null</a></li>
+            <li><a href="https://jutorres91.github.io/username.github.io/">Null</a></li>
+          </ul>
+        </nav>
+        <img src="https://cdn.glitch.com/b5e6c854-0cfc-4a37-b4c8-0a2701a681bd%2Fmenu.png?v=1632845706686" class="menu-icon"
+             onclick="togglemenu()">
+      </div>
       
-        <a-entity gltf-model="./assets/brutus/GLBrutus.glb" rotation="0 180 0" scale="2 2 2" gps-entity-place="longitude: -83.019734
- ; latitude: 40.001708;"/>
-    </a-scene>
-</body>
+      <div class="homecontent">
+        <div class="homecol-1">
+          <h2>Augmented Reality Stadium Project </h2>
+          <h3>Demonstration Website</h3>
+          <p>Juan Diego Torres Brenes Laroche <br> Graduate Student at ACCAD</p>
+          <button  onclick="window.location.href='https://jutorres91.github.io/username.github.io/magnemite.html';" id="Magnemite" type="button">See a Magnemite
+            </button>
+          <button  onclick="window.location.href='https://accad-examples.glitch.me/brutus.html';" id="Brutus" type="button">See Brutus
+            </button>
+          <button  onclick="window.location.href='https://accad-examples.glitch.me/testmodel.html';" id="Testmodel" type="button">See a Test Model
+            </button>
+          
+        </div>
+        
+        <div class="homecol-2">
+            <img src="">
+        
+        </div>
+      </div>
+      </div>
+      
+      <div class="glitch-embed-wrap" style="height: 500px; width: 100%;">
+        <iframe allow="geolocation; microphone; camera; midi; vr; encrypted-media;
+         clipboard; clipboard-read; clipboard-write" src="https://accad-examples.glitch.me/yellowwood.html" style="height: 100%; width: 100%; border: 0;" title="<model-viewer> on Glitch"></iframe>
+      </div>
+      
+      
+      
+      
+    </div>
+    
+      <script>
+       
+        var menulist = document.getElementById("menuList");
+        
+        menuList.style.maxHeight = "0px";
+        
+        function togglemenu(){
+          
+          if( menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+          else
+            {
+              menulist.style.maxHeight = "0px";
+            }
+        }
+      </script>
+    
+  
+  </body>
+</html>
+  
+  
+  
